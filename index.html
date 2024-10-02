@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TOP: Sign-Up Form</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="main_container">
+      <div class="first_col">
+        <img src="./images/icon.png" class="logo" alt="fraghead_icon" />
+        <p class="credits">
+          Photo of Drew Hays on
+          <a
+            href="https://unsplash.com/photos/grayscale-photo-of-man-wearing-blazer-Kt8eGw8_S8Y"
+            target="_blank"
+            rel="noreferrer"
+            class="credits_link"
+            >Upsplash</a
+          >
+        </p>
+      </div>
+      <div class="second_col">
+        <div class="signup_container">
+          <div class="icon_container">
+            <img src="./images/icon_v2.png" alt="" class="mini_logo" />
+          </div>
+          <div class="div_header">
+            <p class="div_title">Create Account</p>
+            <p class="div_desc">
+              Enjoy your journey in the world of fragrances
+            </p>
+          </div>
+          <div class="form_container">
+            <form>
+              <div class="form-row">
+                <!-- <label for="fname" class="label_fname">First Name</label> -->
+                <div class="form_content">
+                  <div class="input_label">First Name</div>
+                  <input
+                    type="text"
+                    class="first_name"
+                    id="fname"
+                    placeholder="Ex: Juan"
+                  />
+                </div>
+
+                <!-- <label for="lname" class="label_lname">Last Name</label> -->
+                <div class="form_content">
+                  <div class="input_label">Last Name</div>
+                  <input
+                    type="text"
+                    class="last_name"
+                    id="lname"
+                    placeholder="Ex: Dela Cruz"
+                  />
+                </div>
+              </div>
+
+              <div class="form-row">
+                <!-- <label for="mail" class="label_mail">Email</label> -->
+                <div class="input_label">Email</div>
+                <input
+                  type="email"
+                  class="email"
+                  id="mail"
+                  placeholder="Ex: juandelacruz@gmail.com"
+                />
+              </div>
+              <div class="error_logs email"></div>
+              <div class="form-row">
+                <!-- <label for="number" class="label_phone">Phone Number</label> -->
+                <div class="input_label">Phone Number</div>
+                <input
+                  type="tel"
+                  class="phone_number"
+                  id="number"
+                  placeholder="Ex: 091234567891"
+                  maxlength="11"
+                />
+              </div>
+              <div class="error_logs phone"></div>
+              <div class="form-row">
+                <!-- <label for="pword" class="label_pword">Password</label> -->
+                <div class="input_label pass">Password</div>
+                <input
+                  type="password"
+                  class="password"
+                  id="pword"
+                  placeholder="Create password"
+                  minlength="8"
+                  maxlength="24"
+                />
+              </div>
+              <div class="form-row cpass">
+                <!-- <label for="cpword" class="label_cpword">Confirm Password</label> -->
+                <div class="input_label cpass">Confirm Password</div>
+                <input
+                  type="password"
+                  class="confirm_password"
+                  id="cpword"
+                  placeholder="Confirm your password"
+                  minlength="8"
+                  maxlength="24"
+                />
+              </div>
+              <div class="error_logs password"></div>
+              <div class="terms_container">
+                <input type="checkbox" id="checkBox" name="checkbox" />
+                I have read and agreed to the
+                <span
+                  ><a href="#" class="terms_cond">Terms and Conditions</a></span
+                >
+              </div>
+              <button class="submit_btn">Create Account</button>
+              <div>
+                <p class="login_link">
+                  Already a member?
+                  <span><a href="#" class="login_form">Log in</a></span>
+                </p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
